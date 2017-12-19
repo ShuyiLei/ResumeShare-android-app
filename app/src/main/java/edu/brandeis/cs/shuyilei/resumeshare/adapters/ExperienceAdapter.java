@@ -22,7 +22,7 @@ import edu.brandeis.cs.shuyilei.resumeshare.views.dialogs.DatePickerDialog;
 import edu.brandeis.cs.shuyilei.resumeshare.views.dialogs.EditDialog;
 
 /**
- * Created by jiahuiming on 10/25/16.
+ * Created by shuyilei on 10/25/16.
  */
 public class ExperienceAdapter extends BaseAdapter {
     private List<Experience> mList;
