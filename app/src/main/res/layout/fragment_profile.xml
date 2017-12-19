@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_profile"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fragmentbackground"
+        tools:context=".views.fragments.ProfileFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            >
+            <edu.brandeis.cs.jiahuiming.resumeshare.views.widgets.CircleImageView
+                android:id="@+id/civ_profile_image"
+                android:layout_width="@dimen/navigation_imageview"
+                android:layout_height="@dimen/navigation_imageview"
+                android:layout_centerInParent="true"
+                android:src="@drawable/man"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/border_width"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark_transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_hight"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height_big"
+                    android:layout_weight="1.5"
+                    android:text="@string/tv_name"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/sn_16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_resume_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_height_big"
+                    android:layout_weight="1.0"
+                    style="@style/resume_item_title"
+                    android:gravity="center_vertical|left"
+                    android:textSize="@dimen/sn_16sp"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_defaultname" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_hight"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/textview_hight"
+                    android:layout_weight="1.5"
+                    android:text="@string/tv_email"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/sn_12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_resume_account"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.0"
+                    style="@style/resume_item_title"
+                    android:gravity="center_vertical|left"
+                    android:textSize="@dimen/sn_12sp"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_defaultname" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                style="@style/resume_item_title"
+                android:gravity="center_vertical"
+                android:background="@color/colorAccent"
+                android:textSize="@dimen/sn_16sp"
+                android:text="@string/tv_education"
+                />
+
+            <ListView
+                android:id="@+id/lv_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sn_16sp"
+                android:divider="@color/transparent"
+                android:minHeight="@dimen/min_listview_height"
+                android:dividerHeight="@dimen/splitline_hight"/>
+
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                style="@style/resume_item_title"
+                android:gravity="center_vertical"
+                android:background="@color/colorAccent"
+                android:textSize="@dimen/sn_16sp"
+                android:text="@string/tv_experience"
+                />
+
+
+            <ListView
+                android:id="@+id/lv_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sn_16sp"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/splitline_hight"
+                android:minHeight="@dimen/min_listview_height"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                style="@style/resume_item_title"
+                android:gravity="center_vertical"
+                android:background="@color/colorAccent"
+                android:textSize="@dimen/sn_16sp"
+                android:text="@string/tv_skill"
+                />
+
+            <ListView
+                android:id="@+id/lv_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sn_16sp"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/splitline_hight"
+                android:minHeight="@dimen/min_listview_height"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/btn_addeducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add education"/>
+
+            <Button
+                android:id="@+id/btn_addexperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add experience"/>
+
+            <Button
+                android:id="@+id/btn_addskill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add skill"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"></View>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
