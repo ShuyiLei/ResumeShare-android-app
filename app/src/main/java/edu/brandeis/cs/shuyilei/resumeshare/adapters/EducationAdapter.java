@@ -26,7 +26,7 @@ import edu.brandeis.cs.shuyilei.resumeshare.views.dialogs.EditDialog;
 import edu.brandeis.cs.shuyilei.resumeshare.views.fragments.ResumeFragment;
 
 /**
- * Created by jiahuiming on 10/25/16.
+ * Created by shuyilei on 10/25/16.
  */
 public class EducationAdapter extends BaseAdapter {
     private List<Education> mList;
