@@ -19,7 +19,7 @@ import java.util.List;
 import edu.brandeis.cs.shuyilei.resumeshare.R;
 
 /**
- * Created by jiahuiming on 10/25/16.
+ * Created by shuyilei on 10/25/16.
  */
 import android.widget.Button;
 import android.widget.Toast;
@@ -30,7 +30,7 @@ import edu.brandeis.cs.shuyilei.resumeshare.views.fragments.ResumeFragment;
 
 
 /**
- * Created by jiahuiming on 10/25/16.
+ * Created by shuyilei on 10/25/16.
  */
 public class ContactsAdapter extends BaseAdapter {
     private List<User> mList;
